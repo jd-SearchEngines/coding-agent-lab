@@ -1,0 +1,11 @@
+{
+  "episode": 1,
+  "version": "v0.1-minimal",
+  "case_count": 5,
+  "passed": 0,
+  "failed": 5,
+  "self_reported_success": 5,
+  "false_finish": 5,
+  "model_runs": 0,
+  "runtime_note": "No provider credentials; deterministic scripted protocol run only."
+}
