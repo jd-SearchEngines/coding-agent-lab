@@ -4,6 +4,8 @@
 
 - GitHub: `https://github.com/jd-SearchEngines/coding-agent-lab`
 - Main branch: `main`
+- Final benchmark commit: `9676e70b0947c0c0b0f4d8edbf8e9fe1f8136b9c`
+- Publication HEAD: the commit containing this handoff document
 - Upstream: `https://github.com/SWE-agent/mini-swe-agent`
 - Upstream inspected commit: `04d809ceab9df28f9adaed044884180159172930`
 
