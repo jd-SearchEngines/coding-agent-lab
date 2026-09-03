@@ -11,7 +11,6 @@ from pathlib import Path
 
 from coding_agent.agent import LocalEnvironment, MinimalAgent, ScriptedModel
 
-
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -35,6 +34,7 @@ def main() -> None:
                     cwd=run_root,
                     text=True,
                     capture_output=True,
+                    check=False,
                 )
                 row = {
                     "episode": 1,

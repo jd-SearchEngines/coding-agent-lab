@@ -7,7 +7,6 @@ import subprocess
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import List
 
 from .case_specs import CASE_SPECS
 
@@ -30,7 +29,7 @@ class AgentResult:
     self_reported_success: bool
     steps: int
     elapsed_ms: float
-    actions: List[ShellResult] = field(default_factory=list)
+    actions: list[ShellResult] = field(default_factory=list)
 
 
 class LocalEnvironment:
@@ -50,6 +49,7 @@ class LocalEnvironment:
                 text=True,
                 capture_output=True,
                 timeout=self.timeout_s,
+                check=False,
             )
             return ShellResult(
                 command, completed.returncode, completed.stdout, completed.stderr,
@@ -86,7 +86,7 @@ class ScriptedModel:
         self.requested_version = version
         self.calls = 0
 
-    def respond(self, _history: List[str]) -> str:
+    def respond(self, _history: list[str]) -> str:
         self.calls += 1
         spec = CASE_SPECS[self.case_id]
         if self.version == "minimal":
@@ -141,8 +141,8 @@ class MinimalAgent:
     def run(self, task: str, case_id: str) -> AgentResult:
         del task
         started = time.perf_counter()
-        history: List[str] = []
-        actions: List[ShellResult] = []
+        history: list[str] = []
+        actions: list[ShellResult] = []
         self_reported_success = False
         for _ in range(self.max_steps):
             response = self.model.respond(history)

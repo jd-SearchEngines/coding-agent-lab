@@ -42,6 +42,7 @@ def run(version: str, episode: int) -> list[dict]:
                 cwd=run_root,
                 text=True,
                 capture_output=True,
+                check=False,
             )
             after = tree_hash(run_root)
             rows.append(

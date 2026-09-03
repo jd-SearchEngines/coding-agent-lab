@@ -31,6 +31,7 @@ class ExternalVerifier:
                 text=True,
                 capture_output=True,
                 timeout=self.timeout_s,
+                check=False,
             )
             return VerificationResult(
                 completed.returncode == 0,
