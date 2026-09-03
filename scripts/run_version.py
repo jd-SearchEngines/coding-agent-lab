@@ -38,7 +38,7 @@ def run(version: str, episode: int) -> list[dict]:
                 ScriptedModel(case_id, version), environment, max_steps=12
             ).run("complete the issue", case_id)
             verification = subprocess.run(
-                ["python3", "-m", "pytest", "-q"],
+                ["python3", "-B", "-m", "pytest", "-q"],
                 cwd=run_root,
                 text=True,
                 capture_output=True,

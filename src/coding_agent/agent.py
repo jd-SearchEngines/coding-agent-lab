@@ -106,12 +106,12 @@ class ScriptedModel:
             if self.calls == 1:
                 return f"CMD: {spec.write_command(spec.wrong)}"
             if self.calls == 2:
-                return "CMD: python3 -m pytest -q"
+                return "CMD: python3 -B -m pytest -q"
             if any("FAILED" in item or "failed" in item for item in _history):
                 if self.calls == 3:
                     return f"CMD: {spec.write_command(spec.good)}"
                 if self.calls == 4:
-                    return "CMD: python3 -m pytest -q"
+                    return "CMD: python3 -B -m pytest -q"
             return "DONE: verified and completed."
         if self.version == "managed":
             if self.calls == 1:
@@ -121,12 +121,12 @@ class ScriptedModel:
             if self.calls == 3:
                 return f"CMD: {spec.write_command(spec.wrong)}"
             if self.calls == 4:
-                return "CMD: python3 -m pytest -q"
+                return "CMD: python3 -B -m pytest -q"
             if any("FAILED" in item or "failed" in item for item in _history):
                 if self.calls == 5:
                     return f"CMD: {spec.write_command(spec.good)}"
                 if self.calls == 6:
-                    return "CMD: python3 -m pytest -q"
+                    return "CMD: python3 -B -m pytest -q"
             return "DONE: verified and completed."
         raise ValueError(f"unknown scripted version: {self.version}")
 

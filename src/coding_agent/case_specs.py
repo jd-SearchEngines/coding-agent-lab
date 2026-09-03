@@ -15,7 +15,8 @@ class CaseSpec:
     def write_command(self, content: str) -> str:
         encoded = base64.b64encode(content.encode()).decode()
         return (
-            'python3 -c "import base64; from pathlib import Path; '
+            'python3 -c "import base64; import shutil; from pathlib import Path; '
+            "shutil.rmtree('__pycache__', ignore_errors=True); "
             f"Path('{self.target}').write_bytes(base64.b64decode('{encoded}'))"
             '"'
         )

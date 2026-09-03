@@ -21,7 +21,7 @@ class ExternalVerifier:
     def __init__(self, timeout_s: float = 30.0):
         self.timeout_s = timeout_s
 
-    def run(self, root: Path, command: str = "python3 -m pytest -q") -> VerificationResult:
+    def run(self, root: Path, command: str = "python3 -B -m pytest -q") -> VerificationResult:
         started = time.perf_counter()
         try:
             completed = subprocess.run(
@@ -44,4 +44,3 @@ class ExternalVerifier:
                 False, 124, exc.stdout or "", f"TIMEOUT after {self.timeout_s}s",
                 (time.perf_counter() - started) * 1000,
             )
-

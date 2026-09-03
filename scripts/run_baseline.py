@@ -31,7 +31,7 @@ def main() -> None:
                     ScriptedModel(case_id), LocalEnvironment(run_root)
                 ).run("complete the issue", case_id)
                 verification = subprocess.run(
-                    ["python3", "-m", "pytest", "-q"],
+                    ["python3", "-B", "-m", "pytest", "-q"],
                     cwd=run_root,
                     text=True,
                     capture_output=True,
