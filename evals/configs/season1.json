@@ -1,0 +1,8 @@
+{
+  "dataset": "evals/dataset.json",
+  "versions": ["minimal", "explore", "edit", "verify", "managed"],
+  "verification": "python3 -B -m pytest -q",
+  "model_runtime": "deterministic_scripted",
+  "cost_policy": "null_without_provider_tokens"
+}
+
