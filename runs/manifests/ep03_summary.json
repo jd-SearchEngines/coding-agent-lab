@@ -1,0 +1,15 @@
+{
+  "episode": 3,
+  "version": "edit",
+  "case_count": 5,
+  "passed": 5,
+  "failed": 0,
+  "self_reported_success": 5,
+  "false_finish": 0,
+  "avg_steps": 7.0,
+  "avg_latency_ms": 492.562,
+  "tool_failures": 0,
+  "permission_denials": 0,
+  "cost_usd": null,
+  "model_runs": 0
+}
