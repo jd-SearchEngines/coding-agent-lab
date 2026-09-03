@@ -14,7 +14,7 @@ central conflict: “Agent says done” versus “repository test says fail”.
 
 `Task → Model → Tool → Observation → Loop → Final`
 
-Commit: `0545336fdcdc776919991afb332916d2d52175f1`.
+Commit: `5be3c77f0246ff206c01e7302aa6e3675f924901`.
 
 ## Biggest 3 Failures
 
@@ -85,4 +85,3 @@ gets, what it may execute, whether a patch actually works, how failures update
 state, when to stop, and how to compare versions. This project's evidence
 supports that systems lesson within a five-case deterministic fixture set; it
 does not support a claim of production readiness.
-

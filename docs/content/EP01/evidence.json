@@ -1,7 +1,7 @@
 {
   "episode": 1,
   "version": "v0.1-minimal",
-  "commit_sha": "0545336fdcdc776919991afb332916d2d52175f1",
+  "commit_sha": "5be3c77f0246ff206c01e7302aa6e3675f924901",
   "core_problem": "A minimal loop can self-report completion without changing code or testing it.",
   "core_concept": "Minimal Agent Loop",
   "case_ids": ["case_001", "case_002", "case_003", "case_004", "case_005"],

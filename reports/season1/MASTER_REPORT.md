@@ -28,7 +28,7 @@ See `docs/architecture/final-capability-map.mmd`.
 
 | Version | Commit | Change |
 |---|---|---|
-| v0.1 | `0545336fdcdc776919991afb332916d2d52175f1` | minimal loop + baseline run |
+| v0.1 | `5be3c77f0246ff206c01e7302aa6e3675f924901` | minimal loop + baseline run |
 | v0.2 | `73b464fb60b23b97b3dc5bb455292ba3e1c2d8b6` | bounded repo exploration |
 | v0.3 | `6cc8e6be10313b180e8caf321fb15e99268319b8` | structured edit + diff |
 | v0.4 | `e4931bf0daa1401bebf91a23534ba44bcc577b8d` | external verify + replan |
@@ -117,4 +117,3 @@ measure model intelligence.
 ## 16. Final Architecture Diagram
 
 `docs/architecture/final-capability-map.mmd`
-

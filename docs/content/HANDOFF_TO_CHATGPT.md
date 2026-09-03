@@ -17,8 +17,8 @@ the publication commit.
 
 | Stage | Commit |
 |---|---|
-| Baseline experiment | `0545336fdcdc776919991afb332916d2d52175f1` |
-| EP01 | `0545336fdcdc776919991afb332916d2d52175f1` |
+| Baseline experiment | `5be3c77f0246ff206c01e7302aa6e3675f924901` |
+| EP01 | `5be3c77f0246ff206c01e7302aa6e3675f924901` |
 | EP02 | `73b464fb60b23b97b3dc5bb455292ba3e1c2d8b6` |
 | EP03 | `6cc8e6be10313b180e8caf321fb15e99268319b8` |
 | EP04 final corrected evidence | `e4931bf0daa1401bebf91a23534ba44bcc577b8d` |
@@ -59,4 +59,3 @@ production safety, public-Issue coverage, or cost claim is supported.
 
 > When producing the eight articles or the video, use only the real Repo, Run,
 > and Report evidence above. Do not invent results for content effect.
-
