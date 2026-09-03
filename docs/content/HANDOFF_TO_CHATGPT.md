@@ -25,7 +25,7 @@ the publication commit.
 | EP05 | `c089c029c2713a5ab0b47483dd5f9758ac13aea8` |
 | EP06 | `e22bfa56c52858494a7c1c52b858d2b03c2977d5` |
 | EP07 | `ac4a4e3ebf4922793d7cbd5f01fea4b4cfa6e771` |
-| EP08 final benchmark | `f71c2a9f1e251cb964965a352b04e869a190e94c` |
+| EP08 final benchmark | `9676e70b0947c0c0b0f4d8edbf8e9fe1f8136b9c` |
 
 The earlier EP04 feature commit `1b61b9dc6a7e72cd3c62a8114a43f770008a5ad0`
 contains the first 4/5 run; `e4931bf0...` contains the corrected reproducible

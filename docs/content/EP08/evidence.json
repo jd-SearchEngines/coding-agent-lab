@@ -1,7 +1,7 @@
 {
   "episode": 8,
   "version": "v1.0-final",
-  "commit_sha": "f71c2a9f1e251cb964965a352b04e869a190e94c",
+  "commit_sha": "9676e70b0947c0c0b0f4d8edbf8e9fe1f8136b9c",
   "core_problem": "Model + tool loop needs verification, boundaries, state, recovery, observability, and regression governance to be production-oriented.",
   "core_concept": "Minimal → Production Coding Agent",
   "case_ids": ["case_001", "case_002", "case_003", "case_004", "case_005"],

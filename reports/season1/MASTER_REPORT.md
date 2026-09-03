@@ -35,7 +35,7 @@ See `docs/architecture/final-capability-map.mmd`.
 | v0.5 | `c089c029c2713a5ab0b47483dd5f9758ac13aea8` | command permission boundary |
 | v0.6 | `e22bfa56c52858494a7c1c52b858d2b03c2977d5` | state + recovery budget |
 | v0.7 | `ac4a4e3ebf4922793d7cbd5f01fea4b4cfa6e771` | regression harness |
-| v1.0 | `f71c2a9f1e251cb964965a352b04e869a190e94c` | final benchmark |
+| v1.0 | `9676e70b0947c0c0b0f4d8edbf8e9fe1f8136b9c` | final benchmark |
 
 ## 5. Final Dataset
 

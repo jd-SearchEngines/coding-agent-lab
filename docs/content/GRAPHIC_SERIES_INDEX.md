@@ -9,7 +9,7 @@
 | 5. 它开始执行Shell了，我敢把电脑交给它吗？ | v0.5-managed | `c089c029` | boundary probe | model intent vs permission | Execution Boundary | 5 denials; 5/5 pass | `/etc/passwd` denied | execution needs a boundary | `docs/content/EP05/` |
 | 6. Agent失败以后为什么不能无脑Retry？ | v0.6-recovery | `e22bfa56` | failure/retry probe | repeated failure | State + Recovery | bounded retries; 5 recovery successes | budget exhaustion stops | failure must update state | `docs/content/EP06/` |
 | 7. 怎么证明V2真的比V1好？ | v0.7-eval | `ac4a4e3e` | fixed dataset | no regression proof | Regression Eval | 5 versions compared | baseline 0/5 retained | compare on fixed cases | `docs/content/EP07/` |
-| 8. 工业级Coding Agent到底多了什么？ | v1.0-final | `f71c2a9f` | fixed dataset | system capabilities/governance | capability map | 5/5 final pass; cost null | blocked/failed attempts retained | model loop is only the beginning | `docs/content/EP08/` |
+| 8. 工业级Coding Agent到底多了什么？ | v1.0-final | `9676e70b` | fixed dataset | system capabilities/governance | capability map | 5/5 final pass; cost null | blocked/failed attempts retained | model loop is only the beginning | `docs/content/EP08/` |
 
 All cases are synthetic local fixtures and are labeled as such. No row claims a
 historical GitHub Issue reproduction.
