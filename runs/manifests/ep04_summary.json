@@ -1,0 +1,15 @@
+{
+  "episode": 4,
+  "version": "verify",
+  "case_count": 5,
+  "passed": 4,
+  "failed": 1,
+  "self_reported_success": 5,
+  "false_finish": 1,
+  "avg_steps": 13.0,
+  "avg_latency_ms": 1419.596,
+  "tool_failures": 6,
+  "permission_denials": 0,
+  "cost_usd": null,
+  "model_runs": 0
+}

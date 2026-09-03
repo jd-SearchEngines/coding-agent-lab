@@ -1,0 +1,8 @@
+flowchart LR
+  T[Task] --> O[Observe repository]
+  O --> A[Act: patch]
+  A --> V[External verifier]
+  V -->|pass| F[Final result]
+  V -->|fail| R[Replan with failure observation]
+  R --> A
+
