@@ -1,0 +1,15 @@
+{
+  "episode": 5,
+  "version": "managed",
+  "case_count": 5,
+  "passed": 5,
+  "failed": 0,
+  "self_reported_success": 5,
+  "false_finish": 0,
+  "avg_steps": 19.0,
+  "avg_latency_ms": 1330.345,
+  "tool_failures": 10,
+  "permission_denials": 5,
+  "cost_usd": null,
+  "model_runs": 0
+}

@@ -1,0 +1,8 @@
+flowchart LR
+  M[Model intent] --> P{CommandPolicy}
+  P -->|allowed| W[Workspace environment]
+  P -->|denied| D[Permission denied observation]
+  W --> O[Observation]
+  D --> O
+  O --> M
+
