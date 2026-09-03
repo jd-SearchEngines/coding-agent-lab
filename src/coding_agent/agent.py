@@ -82,7 +82,8 @@ class ScriptedModel:
 
     def __init__(self, case_id: str, version: str = "minimal"):
         self.case_id = case_id
-        self.version = version
+        self.version = "managed" if version == "final" else version
+        self.requested_version = version
         self.calls = 0
 
     def respond(self, _history: List[str]) -> str:
@@ -159,7 +160,10 @@ class MinimalAgent:
                 break
         return AgentResult(
             case_id=case_id,
-            version=f"v0.{'1' if self.model.version == 'minimal' else '2' if self.model.version == 'explore' else '3' if self.model.version == 'edit' else '4' if self.model.version == 'verify' else '6'}-{self.model.version}",
+            version=(
+                "v1.0-final" if self.model.requested_version == "final" else
+                f"v0.{'1' if self.model.version == 'minimal' else '2' if self.model.version == 'explore' else '3' if self.model.version == 'edit' else '4' if self.model.version == 'verify' else '6'}-{self.model.version}"
+            ),
             status="self_reported_done" if self_reported_success else "step_budget_exhausted",
             self_reported_success=self_reported_success,
             steps=len(actions) + len(history),

@@ -1,0 +1,12 @@
+{
+  "episode": 8,
+  "version": "v1.0-final",
+  "case_count": 5,
+  "passed": 5,
+  "false_finish": 0,
+  "avg_steps": 19.0,
+  "permission_denials": 5,
+  "cost_usd": null,
+  "model_runs": 0,
+  "runtime": "deterministic_scripted; provider LLM not configured"
+}

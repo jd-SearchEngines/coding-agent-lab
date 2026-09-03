@@ -32,7 +32,7 @@ def run(version: str, episode: int) -> list[dict]:
             run_root = Path(temp)
             shutil.copytree(workspace, run_root, dirs_exist_ok=True)
             before = tree_hash(run_root)
-            environment = ManagedEnvironment(run_root) if version == "managed" else LocalEnvironment(run_root)
+            environment = ManagedEnvironment(run_root) if version in {"managed", "final"} else LocalEnvironment(run_root)
             started = time.perf_counter()
             agent_result = MinimalAgent(
                 ScriptedModel(case_id, version), environment, max_steps=12
@@ -83,7 +83,7 @@ def run(version: str, episode: int) -> list[dict]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("version", choices=["minimal", "explore", "edit", "verify", "managed"])
+    parser.add_argument("version", choices=["minimal", "explore", "edit", "verify", "managed", "final"])
     parser.add_argument("--episode", type=int, required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()

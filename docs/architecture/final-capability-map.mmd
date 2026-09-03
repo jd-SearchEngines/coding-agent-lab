@@ -1,0 +1,13 @@
+flowchart TB
+  I[GitHub Issue] --> U[Understand]
+  U --> X[Explore repo]
+  X --> E[Edit / patch]
+  E --> V[External verify]
+  V -->|fail| S[State + recovery]
+  S --> E
+  V -->|pass| R[Result + audit]
+  R --- P[Permission boundary]
+  R --- T[Timeout / retry]
+  R --- O[Observability: steps, latency, cost]
+  R --- G[Regression eval]
+
