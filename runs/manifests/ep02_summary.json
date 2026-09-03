@@ -1,0 +1,15 @@
+{
+  "episode": 2,
+  "version": "explore",
+  "case_count": 5,
+  "passed": 0,
+  "failed": 5,
+  "self_reported_success": 5,
+  "false_finish": 5,
+  "avg_steps": 7.0,
+  "avg_latency_ms": 481.641,
+  "tool_failures": 0,
+  "permission_denials": 0,
+  "cost_usd": null,
+  "model_runs": 0
+}

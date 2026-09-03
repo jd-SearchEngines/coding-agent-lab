@@ -22,7 +22,7 @@ def main() -> None:
     rows = []
     with output.open("w", encoding="utf-8") as handle:
         for workspace in cases:
-            case_id = workspace.parent.parent.name
+            case_id = workspace.parent.name
             with tempfile.TemporaryDirectory(prefix=f"{case_id}-") as temp:
                 run_root = Path(temp)
                 shutil.copytree(workspace, run_root, dirs_exist_ok=True)
@@ -70,4 +70,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
