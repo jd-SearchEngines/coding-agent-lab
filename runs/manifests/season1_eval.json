@@ -23,7 +23,7 @@
         ".pytest_cache/v/cache/lastfailed",
         ".pytest_cache/v/cache/nodeids"
       ],
-      "latency_ms": 451.555,
+      "latency_ms": 468.927,
       "cost_usd": null,
       "actions": [],
       "verification_output": "F                                                                        [100%]\n=================================== FAILURES ===================================\n___________________ test_normalize_name_collapses_whitespace ___________________\n\n    def test_normalize_name_collapses_whitespace() -> None:\n>       assert normalize_name(\"  Ada   Lovelace \") == \"ada lovelace\"\nE       AssertionError: assert '  ada   lovelace ' == 'ada lovelace'\nE         \nE         - ada lovelace\nE         +   ada   lovelace \nE         ? ++   ++         +\n\ntest_name_utils.py:5: AssertionError\n=========================== short test summary info ============================\nFAILED test_name_utils.py::test_normalize_name_collapses_whitespace - Asserti...\n1 failed in 0.04s\n"
@@ -50,7 +50,7 @@
         ".pytest_cache/v/cache/lastfailed",
         ".pytest_cache/v/cache/nodeids"
       ],
-      "latency_ms": 439.539,
+      "latency_ms": 459.339,
       "cost_usd": null,
       "actions": [],
       "verification_output": ".F..                                                                     [100%]\n=================================== FAILURES ===================================\n___________________ test_parse_port_rejects_invalid_port[0] ____________________\n\nvalue = '0'\n\n    @pytest.mark.parametrize(\"value\", [\"0\", \"65536\", \"http\"])\n    def test_parse_port_rejects_invalid_port(value: str) -> None:\n        with pytest.raises(ValueError):\n>           parse_port(value)\nE           Failed: DID NOT RAISE <class 'ValueError'>\n\ntest_ports.py:13: Failed\n=========================== short test summary info ============================\nFAILED test_ports.py::test_parse_port_rejects_invalid_port[0] - Failed: DID N...\n1 failed, 3 passed in 0.04s\n"
@@ -77,7 +77,7 @@
         ".pytest_cache/v/cache/lastfailed",
         ".pytest_cache/v/cache/nodeids"
       ],
-      "latency_ms": 435.841,
+      "latency_ms": 448.581,
       "cost_usd": null,
       "actions": [],
       "verification_output": "F                                                                        [100%]\n=================================== FAILURES ===================================\n___________________ test_truncate_text_keeps_words_and_limit ___________________\n\n    def test_truncate_text_keeps_words_and_limit() -> None:\n>       assert truncate_text(\"coding agent\", 9) == \"coding...\"\nE       AssertionError: assert 'coding ag...' == 'coding...'\nE         \nE         - coding...\nE         + coding ag...\nE         ?       +++\n\ntest_text_utils.py:5: AssertionError\n=========================== short test summary info ============================\nFAILED test_text_utils.py::test_truncate_text_keeps_words_and_limit - Asserti...\n1 failed in 0.03s\n"
@@ -104,10 +104,10 @@
         ".pytest_cache/v/cache/lastfailed",
         ".pytest_cache/v/cache/nodeids"
       ],
-      "latency_ms": 434.595,
+      "latency_ms": 454.739,
       "cost_usd": null,
       "actions": [],
-      "verification_output": "FF                                                                       [100%]\n=================================== FAILURES ===================================\n________________________ test_format_seconds_zero_pads _________________________\n\n    def test_format_seconds_zero_pads() -> None:\n>       assert format_seconds(65) == \"01:05\"\nE       AssertionError: assert '1:5' == '01:05'\nE         \nE         - 01:05\nE         ? -  -\nE         + 1:5\n\ntest_time_utils.py:7: AssertionError\n_____________________ test_format_seconds_rejects_negative _____________________\n\n    def test_format_seconds_rejects_negative() -> None:\n        with pytest.raises(ValueError):\n>           format_seconds(-1)\nE           Failed: DID NOT RAISE <class 'ValueError'>\n\ntest_time_utils.py:12: Failed\n=========================== short test summary info ============================\nFAILED test_time_utils.py::test_format_seconds_zero_pads - AssertionError: as...\nFAILED test_time_utils.py::test_format_seconds_rejects_negative - Failed: DID...\n2 failed in 0.03s\n"
+      "verification_output": "FF                                                                       [100%]\n=================================== FAILURES ===================================\n________________________ test_format_seconds_zero_pads _________________________\n\n    def test_format_seconds_zero_pads() -> None:\n>       assert format_seconds(65) == \"01:05\"\nE       AssertionError: assert '1:5' == '01:05'\nE         \nE         - 01:05\nE         ? -  -\nE         + 1:5\n\ntest_time_utils.py:7: AssertionError\n_____________________ test_format_seconds_rejects_negative _____________________\n\n    def test_format_seconds_rejects_negative() -> None:\n        with pytest.raises(ValueError):\n>           format_seconds(-1)\nE           Failed: DID NOT RAISE <class 'ValueError'>\n\ntest_time_utils.py:12: Failed\n=========================== short test summary info ============================\nFAILED test_time_utils.py::test_format_seconds_zero_pads - AssertionError: as...\nFAILED test_time_utils.py::test_format_seconds_rejects_negative - Failed: DID...\n2 failed in 0.04s\n"
     },
     {
       "episode": 1,
@@ -131,10 +131,10 @@
         ".pytest_cache/v/cache/lastfailed",
         ".pytest_cache/v/cache/nodeids"
       ],
-      "latency_ms": 405.559,
+      "latency_ms": 473.255,
       "cost_usd": null,
       "actions": [],
-      "verification_output": ".F                                                                       [100%]\n=================================== FAILURES ===================================\n______________________ test_safe_divide_has_domain_error _______________________\n\n    def test_safe_divide_has_domain_error() -> None:\n        with pytest.raises(ValueError, match=\"zero denominator\"):\n>           safe_divide(1, 0)\n\ntest_math_utils.py:12: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nnumerator = 1, denominator = 0\n\n    def safe_divide(numerator: float, denominator: float) -> float:\n>       return numerator / denominator\nE       ZeroDivisionError: division by zero\n\nmath_utils.py:2: ZeroDivisionError\n=========================== short test summary info ============================\nFAILED test_math_utils.py::test_safe_divide_has_domain_error - ZeroDivisionEr...\n1 failed, 1 passed in 0.03s\n"
+      "verification_output": ".F                                                                       [100%]\n=================================== FAILURES ===================================\n______________________ test_safe_divide_has_domain_error _______________________\n\n    def test_safe_divide_has_domain_error() -> None:\n        with pytest.raises(ValueError, match=\"zero denominator\"):\n>           safe_divide(1, 0)\n\ntest_math_utils.py:12: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nnumerator = 1, denominator = 0\n\n    def safe_divide(numerator: float, denominator: float) -> float:\n>       return numerator / denominator\nE       ZeroDivisionError: division by zero\n\nmath_utils.py:2: ZeroDivisionError\n=========================== short test summary info ============================\nFAILED test_math_utils.py::test_safe_divide_has_domain_error - ZeroDivisionEr...\n1 failed, 1 passed in 0.04s\n"
     },
     {
       "episode": 2,
@@ -158,7 +158,7 @@
         ".pytest_cache/v/cache/lastfailed",
         ".pytest_cache/v/cache/nodeids"
       ],
-      "latency_ms": 439.395,
+      "latency_ms": 523.279,
       "cost_usd": null,
       "actions": [
         {
@@ -176,7 +176,7 @@
           "stderr": ""
         }
       ],
-      "verification_output": "F                                                                        [100%]\n=================================== FAILURES ===================================\n___________________ test_normalize_name_collapses_whitespace ___________________\n\n    def test_normalize_name_collapses_whitespace() -> None:\n>       assert normalize_name(\"  Ada   Lovelace \") == \"ada lovelace\"\nE       AssertionError: assert '  ada   lovelace ' == 'ada lovelace'\nE         \nE         - ada lovelace\nE         +   ada   lovelace \nE         ? ++   ++         +\n\ntest_name_utils.py:5: AssertionError\n=========================== short test summary info ============================\nFAILED test_name_utils.py::test_normalize_name_collapses_whitespace - Asserti...\n1 failed in 0.03s\n"
+      "verification_output": "F                                                                        [100%]\n=================================== FAILURES ===================================\n___________________ test_normalize_name_collapses_whitespace ___________________\n\n    def test_normalize_name_collapses_whitespace() -> None:\n>       assert normalize_name(\"  Ada   Lovelace \") == \"ada lovelace\"\nE       AssertionError: assert '  ada   lovelace ' == 'ada lovelace'\nE         \nE         - ada lovelace\nE         +   ada   lovelace \nE         ? ++   ++         +\n\ntest_name_utils.py:5: AssertionError\n=========================== short test summary info ============================\nFAILED test_name_utils.py::test_normalize_name_collapses_whitespace - Asserti...\n1 failed in 0.04s\n"
     },
     {
       "episode": 2,
@@ -200,7 +200,7 @@
         ".pytest_cache/v/cache/lastfailed",
         ".pytest_cache/v/cache/nodeids"
       ],
-      "latency_ms": 442.885,
+      "latency_ms": 559.348,
       "cost_usd": null,
       "actions": [
         {
@@ -242,7 +242,7 @@
         ".pytest_cache/v/cache/lastfailed",
         ".pytest_cache/v/cache/nodeids"
       ],
-      "latency_ms": 445.149,
+      "latency_ms": 519.057,
       "cost_usd": null,
       "actions": [
         {
@@ -260,7 +260,7 @@
           "stderr": ""
         }
       ],
-      "verification_output": "F                                                                        [100%]\n=================================== FAILURES ===================================\n___________________ test_truncate_text_keeps_words_and_limit ___________________\n\n    def test_truncate_text_keeps_words_and_limit() -> None:\n>       assert truncate_text(\"coding agent\", 9) == \"coding...\"\nE       AssertionError: assert 'coding ag...' == 'coding...'\nE         \nE         - coding...\nE         + coding ag...\nE         ?       +++\n\ntest_text_utils.py:5: AssertionError\n=========================== short test summary info ============================\nFAILED test_text_utils.py::test_truncate_text_keeps_words_and_limit - Asserti...\n1 failed in 0.03s\n"
+      "verification_output": "F                                                                        [100%]\n=================================== FAILURES ===================================\n___________________ test_truncate_text_keeps_words_and_limit ___________________\n\n    def test_truncate_text_keeps_words_and_limit() -> None:\n>       assert truncate_text(\"coding agent\", 9) == \"coding...\"\nE       AssertionError: assert 'coding ag...' == 'coding...'\nE         \nE         - coding...\nE         + coding ag...\nE         ?       +++\n\ntest_text_utils.py:5: AssertionError\n=========================== short test summary info ============================\nFAILED test_text_utils.py::test_truncate_text_keeps_words_and_limit - Asserti...\n1 failed in 0.04s\n"
     },
     {
       "episode": 2,
@@ -284,7 +284,7 @@
         ".pytest_cache/v/cache/lastfailed",
         ".pytest_cache/v/cache/nodeids"
       ],
-      "latency_ms": 521.517,
+      "latency_ms": 482.786,
       "cost_usd": null,
       "actions": [
         {
@@ -326,7 +326,7 @@
         ".pytest_cache/v/cache/lastfailed",
         ".pytest_cache/v/cache/nodeids"
       ],
-      "latency_ms": 541.001,
+      "latency_ms": 469.911,
       "cost_usd": null,
       "actions": [
         {
@@ -368,7 +368,7 @@
         ".pytest_cache/v/cache/nodeids",
         "name_utils.py"
       ],
-      "latency_ms": 452.376,
+      "latency_ms": 451.201,
       "cost_usd": null,
       "actions": [
         {
@@ -410,7 +410,7 @@
         ".pytest_cache/v/cache/nodeids",
         "ports.py"
       ],
-      "latency_ms": 451.22,
+      "latency_ms": 453.652,
       "cost_usd": null,
       "actions": [
         {
@@ -428,7 +428,7 @@
           "stderr": ""
         }
       ],
-      "verification_output": "....                                                                     [100%]\n4 passed in 0.00s\n"
+      "verification_output": "....                                                                     [100%]\n4 passed in 0.01s\n"
     },
     {
       "episode": 3,
@@ -452,7 +452,7 @@
         ".pytest_cache/v/cache/nodeids",
         "text_utils.py"
       ],
-      "latency_ms": 448.211,
+      "latency_ms": 457.881,
       "cost_usd": null,
       "actions": [
         {
@@ -494,7 +494,7 @@
         ".pytest_cache/v/cache/nodeids",
         "time_utils.py"
       ],
-      "latency_ms": 443.859,
+      "latency_ms": 442.76,
       "cost_usd": null,
       "actions": [
         {
@@ -536,7 +536,7 @@
         ".pytest_cache/v/cache/nodeids",
         "math_utils.py"
       ],
-      "latency_ms": 442.845,
+      "latency_ms": 443.387,
       "cost_usd": null,
       "actions": [
         {
@@ -579,7 +579,7 @@
         ".pytest_cache/v/cache/nodeids",
         "name_utils.py"
       ],
-      "latency_ms": 1301.428,
+      "latency_ms": 1385.123,
       "cost_usd": null,
       "actions": [
         {
@@ -636,7 +636,7 @@
         ".pytest_cache/v/cache/nodeids",
         "ports.py"
       ],
-      "latency_ms": 1236.016,
+      "latency_ms": 1358.384,
       "cost_usd": null,
       "actions": [
         {
@@ -650,7 +650,7 @@
           "command": "python3 -B -m pytest -q",
           "returncode": 1,
           "denied": false,
-          "stdout": ".F..                                                                     [100%]\n=================================== FAILURES ===================================\n___________________ test_parse_port_rejects_invalid_port[0] ____________________\n\nvalue = '0'\n\n    @pytest.mark.parametrize(\"value\", [\"0\", \"65536\", \"http\"])\n    def test_parse_port_rejects_invalid_port(value: str) -> None:\n        with pytest.raises(ValueError):\n>           parse_port(value)\nE           Failed: DID NOT RAISE <class 'ValueError'>\n\ntest_ports.py:13: Failed\n=========================== short test summary info ============================\nFAILED test_ports.py::test_parse_port_rejects_invalid_port[0] - Failed: DID N...\n1 failed, 3 passed in 0.03s\n",
+          "stdout": ".F..                                                                     [100%]\n=================================== FAILURES ===================================\n___________________ test_parse_port_rejects_invalid_port[0] ____________________\n\nvalue = '0'\n\n    @pytest.mark.parametrize(\"value\", [\"0\", \"65536\", \"http\"])\n    def test_parse_port_rejects_invalid_port(value: str) -> None:\n        with pytest.raises(ValueError):\n>           parse_port(value)\nE           Failed: DID NOT RAISE <class 'ValueError'>\n\ntest_ports.py:13: Failed\n=========================== short test summary info ============================\nFAILED test_ports.py::test_parse_port_rejects_invalid_port[0] - Failed: DID N...\n1 failed, 3 passed in 0.04s\n",
           "stderr": ""
         },
         {
@@ -693,7 +693,7 @@
         ".pytest_cache/v/cache/nodeids",
         "text_utils.py"
       ],
-      "latency_ms": 1369.805,
+      "latency_ms": 1425.822,
       "cost_usd": null,
       "actions": [
         {
@@ -750,7 +750,7 @@
         ".pytest_cache/v/cache/nodeids",
         "time_utils.py"
       ],
-      "latency_ms": 1249.87,
+      "latency_ms": 1382.813,
       "cost_usd": null,
       "actions": [
         {
@@ -764,7 +764,7 @@
           "command": "python3 -B -m pytest -q",
           "returncode": 1,
           "denied": false,
-          "stdout": "FF                                                                       [100%]\n=================================== FAILURES ===================================\n________________________ test_format_seconds_zero_pads _________________________\n\n    def test_format_seconds_zero_pads() -> None:\n>       assert format_seconds(65) == \"01:05\"\nE       AssertionError: assert '1:5' == '01:05'\nE         \nE         - 01:05\nE         ? -  -\nE         + 1:5\n\ntest_time_utils.py:7: AssertionError\n_____________________ test_format_seconds_rejects_negative _____________________\n\n    def test_format_seconds_rejects_negative() -> None:\n        with pytest.raises(ValueError):\n>           format_seconds(-1)\nE           Failed: DID NOT RAISE <class 'ValueError'>\n\ntest_time_utils.py:12: Failed\n=========================== short test summary info ============================\nFAILED test_time_utils.py::test_format_seconds_zero_pads - AssertionError: as...\nFAILED test_time_utils.py::test_format_seconds_rejects_negative - Failed: DID...\n2 failed in 0.03s\n",
+          "stdout": "FF                                                                       [100%]\n=================================== FAILURES ===================================\n________________________ test_format_seconds_zero_pads _________________________\n\n    def test_format_seconds_zero_pads() -> None:\n>       assert format_seconds(65) == \"01:05\"\nE       AssertionError: assert '1:5' == '01:05'\nE         \nE         - 01:05\nE         ? -  -\nE         + 1:5\n\ntest_time_utils.py:7: AssertionError\n_____________________ test_format_seconds_rejects_negative _____________________\n\n    def test_format_seconds_rejects_negative() -> None:\n        with pytest.raises(ValueError):\n>           format_seconds(-1)\nE           Failed: DID NOT RAISE <class 'ValueError'>\n\ntest_time_utils.py:12: Failed\n=========================== short test summary info ============================\nFAILED test_time_utils.py::test_format_seconds_zero_pads - AssertionError: as...\nFAILED test_time_utils.py::test_format_seconds_rejects_negative - Failed: DID...\n2 failed in 0.04s\n",
           "stderr": ""
         },
         {
@@ -807,7 +807,7 @@
         ".pytest_cache/v/cache/nodeids",
         "math_utils.py"
       ],
-      "latency_ms": 1213.655,
+      "latency_ms": 1350.429,
       "cost_usd": null,
       "actions": [
         {
@@ -821,7 +821,7 @@
           "command": "python3 -B -m pytest -q",
           "returncode": 1,
           "denied": false,
-          "stdout": ".F                                                                       [100%]\n=================================== FAILURES ===================================\n______________________ test_safe_divide_has_domain_error _______________________\n\n    def test_safe_divide_has_domain_error() -> None:\n        with pytest.raises(ValueError, match=\"zero denominator\"):\n>           safe_divide(1, 0)\nE           Failed: DID NOT RAISE <class 'ValueError'>\n\ntest_math_utils.py:12: Failed\n=========================== short test summary info ============================\nFAILED test_math_utils.py::test_safe_divide_has_domain_error - Failed: DID NO...\n1 failed, 1 passed in 0.03s\n",
+          "stdout": ".F                                                                       [100%]\n=================================== FAILURES ===================================\n______________________ test_safe_divide_has_domain_error _______________________\n\n    def test_safe_divide_has_domain_error() -> None:\n        with pytest.raises(ValueError, match=\"zero denominator\"):\n>           safe_divide(1, 0)\nE           Failed: DID NOT RAISE <class 'ValueError'>\n\ntest_math_utils.py:12: Failed\n=========================== short test summary info ============================\nFAILED test_math_utils.py::test_safe_divide_has_domain_error - Failed: DID NO...\n1 failed, 1 passed in 0.04s\n",
           "stderr": ""
         },
         {
@@ -864,7 +864,7 @@
         ".pytest_cache/v/cache/nodeids",
         "name_utils.py"
       ],
-      "latency_ms": 1257.941,
+      "latency_ms": 1430.967,
       "cost_usd": null,
       "actions": [
         {
@@ -935,7 +935,7 @@
         ".pytest_cache/v/cache/nodeids",
         "ports.py"
       ],
-      "latency_ms": 1330.466,
+      "latency_ms": 1204.507,
       "cost_usd": null,
       "actions": [
         {
@@ -963,7 +963,7 @@
           "command": "python3 -B -m pytest -q",
           "returncode": 1,
           "denied": false,
-          "stdout": ".F..                                                                     [100%]\n=================================== FAILURES ===================================\n___________________ test_parse_port_rejects_invalid_port[0] ____________________\n\nvalue = '0'\n\n    @pytest.mark.parametrize(\"value\", [\"0\", \"65536\", \"http\"])\n    def test_parse_port_rejects_invalid_port(value: str) -> None:\n        with pytest.raises(ValueError):\n>           parse_port(value)\nE           Failed: DID NOT RAISE <class 'ValueError'>\n\ntest_ports.py:13: Failed\n=========================== short test summary info ============================\nFAILED test_ports.py::test_parse_port_rejects_invalid_port[0] - Failed: DID N...\n1 failed, 3 passed in 0.04s\n",
+          "stdout": ".F..                                                                     [100%]\n=================================== FAILURES ===================================\n___________________ test_parse_port_rejects_invalid_port[0] ____________________\n\nvalue = '0'\n\n    @pytest.mark.parametrize(\"value\", [\"0\", \"65536\", \"http\"])\n    def test_parse_port_rejects_invalid_port(value: str) -> None:\n        with pytest.raises(ValueError):\n>           parse_port(value)\nE           Failed: DID NOT RAISE <class 'ValueError'>\n\ntest_ports.py:13: Failed\n=========================== short test summary info ============================\nFAILED test_ports.py::test_parse_port_rejects_invalid_port[0] - Failed: DID N...\n1 failed, 3 passed in 0.03s\n",
           "stderr": ""
         },
         {
@@ -1006,7 +1006,7 @@
         ".pytest_cache/v/cache/nodeids",
         "text_utils.py"
       ],
-      "latency_ms": 1306.005,
+      "latency_ms": 1200.322,
       "cost_usd": null,
       "actions": [
         {
@@ -1077,7 +1077,7 @@
         ".pytest_cache/v/cache/nodeids",
         "time_utils.py"
       ],
-      "latency_ms": 1279.525,
+      "latency_ms": 1202.467,
       "cost_usd": null,
       "actions": [
         {
@@ -1148,7 +1148,7 @@
         ".pytest_cache/v/cache/nodeids",
         "math_utils.py"
       ],
-      "latency_ms": 1285.664,
+      "latency_ms": 1234.168,
       "cost_usd": null,
       "actions": [
         {

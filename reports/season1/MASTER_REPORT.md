@@ -60,11 +60,11 @@ See `metrics_summary.csv`. The current machine-generated scorecard is:
 
 | Version | Pass | False Finish | Avg Steps | Avg Latency (ms) | Cost |
 |---|---:|---:|---:|---:|---|
-| v0.1 minimal | 0/5 | 5 | 1.0 | 433.418 | null |
-| v0.2 explore | 0/5 | 5 | 7.0 | 477.989 | null |
-| v0.3 edit | 5/5 | 0 | 7.0 | 447.702 | null |
-| v0.4 verify | 5/5 | 0 | 13.0 | 1274.155 | null |
-| v0.6 managed | 5/5 | 0 | 19.0 | 1291.920 | null |
+| v0.1 minimal | 0/5 | 5 | 1.0 | 460.968 | null |
+| v0.2 explore | 0/5 | 5 | 7.0 | 510.876 | null |
+| v0.3 edit | 5/5 | 0 | 7.0 | 449.776 | null |
+| v0.4 verify | 5/5 | 0 | 13.0 | 1380.514 | null |
+| v0.6 managed | 5/5 | 0 | 19.0 | 1254.486 | null |
 
 Latency is host/run dependent; cost is null because no provider token data
 exists. The final benchmark is a fresh v1.0 alias of the managed composition.

@@ -30,4 +30,3 @@ host; cost is null because no provider token usage exists.
 The dataset has five synthetic cases and no provider-backed model runs. A
 larger public-issue corpus, cross-host latency controls, and real token/cost
 telemetry are still required for stronger claims.
-
