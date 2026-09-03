@@ -1,0 +1,8 @@
+flowchart TD
+  F[Failure observation] --> D[Diagnose + update state]
+  D --> B{Retry budget left?}
+  B -->|yes| R[Replan with new observation]
+  R --> A[Retry or fallback]
+  B -->|no| S[Stop with reason]
+  A --> F
+

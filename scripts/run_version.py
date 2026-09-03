@@ -56,6 +56,11 @@ def run(version: str, episode: int) -> list[dict]:
                     "false_finish": agent_result.self_reported_success and verification.returncode != 0,
                     "steps": agent_result.steps,
                     "tool_failures": sum(action.returncode != 0 for action in agent_result.actions),
+                    "retry_count": sum(action.returncode != 0 for action in agent_result.actions),
+                    "recovery_success": bool(
+                        verification.returncode == 0 and any(action.returncode != 0 for action in agent_result.actions)
+                    ),
+                    "termination_reason": "verified" if verification.returncode == 0 else "external_verification_failed",
                     "permission_denials": sum(action.denied for action in agent_result.actions),
                     "changed_files": sorted(key for key in after if before.get(key) != after[key]),
                     "latency_ms": round((time.perf_counter() - started) * 1000, 3),
