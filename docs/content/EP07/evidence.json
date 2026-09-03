@@ -1,0 +1,15 @@
+{
+  "episode": 7,
+  "version": "v0.7-eval",
+  "commit_sha": "ac4a4e3ebf4922793d7cbd5f01fea4b4cfa6e771",
+  "core_problem": "A single successful demo cannot prove a new version is better.",
+  "core_concept": "Regression Eval",
+  "case_ids": ["case_001", "case_002", "case_003", "case_004", "case_005"],
+  "before": {"fixed_scorecard": false},
+  "after": {"fixed_scorecard": true, "versions_compared": 5},
+  "metrics": {"minimal_pass": 0, "explore_pass": 0, "edit_pass": 5, "verify_pass": 5, "managed_pass": 5, "cost_usd": null, "model_runs": 0},
+  "bad_cases": ["Baseline and explore remain 0/5 with 5 false finishes each."],
+  "current_capabilities": ["understand", "explore", "edit", "verify", "sandbox", "recovery", "eval"],
+  "remaining_gaps": ["public_issue_corpus", "provider_model_evidence"],
+  "evidence_paths": ["reports/season1/metrics_summary.csv", "reports/season1/failure_taxonomy.md", "runs/manifests/season1_eval.json"]
+}

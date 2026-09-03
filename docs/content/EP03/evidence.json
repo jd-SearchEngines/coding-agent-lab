@@ -1,0 +1,15 @@
+{
+  "episode": 3,
+  "version": "v0.3-edit",
+  "commit_sha": "6cc8e6be10313b180e8caf321fb15e99268319b8",
+  "core_problem": "Generating code is different from modifying the correct existing file under constraints.",
+  "core_concept": "Action / Code Editing",
+  "case_ids": ["case_001", "case_002", "case_003", "case_004", "case_005"],
+  "before": {"passes": 0, "changed_files": 0},
+  "after": {"passes": 5, "changed_files": 5, "false_finish": 0},
+  "metrics": {"case_count": 5, "steps_avg": 7.0, "cost_usd": null, "model_runs": 0},
+  "bad_cases": ["The edit version still finishes without in-loop verification."],
+  "current_capabilities": ["understand", "explore", "edit"],
+  "remaining_gaps": ["verify", "sandbox", "recovery", "eval"],
+  "evidence_paths": ["src/coding_agent/editor.py", "runs/manifests/ep03_runs.jsonl", "reports/EP03/REPORT.md"]
+}

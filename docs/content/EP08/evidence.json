@@ -1,0 +1,15 @@
+{
+  "episode": 8,
+  "version": "v1.0-final",
+  "commit_sha": "f71c2a9f1e251cb964965a352b04e869a190e94c",
+  "core_problem": "Model + tool loop needs verification, boundaries, state, recovery, observability, and regression governance to be production-oriented.",
+  "core_concept": "Minimal → Production Coding Agent",
+  "case_ids": ["case_001", "case_002", "case_003", "case_004", "case_005"],
+  "before": {"version": "v0.1-minimal", "passes": 0, "false_finish": 5},
+  "after": {"version": "v1.0-final", "passes": 5, "false_finish": 0, "permission_denials": 5},
+  "metrics": {"case_count": 5, "steps_avg": 19.0, "tool_failures": 10, "cost_usd": null, "model_runs": 0},
+  "bad_cases": ["The final run still contains blocked and failed attempts; it recovers or stops rather than deleting them."],
+  "current_capabilities": ["understand", "explore", "edit", "verify", "sandbox", "state", "recovery", "eval", "audit", "timeout", "latency", "observability", "regression"],
+  "remaining_gaps": ["cost_telemetry", "provider_llm_run", "public_issue_reproduction", "production_sandbox"],
+  "evidence_paths": ["src/coding_agent/production.py", "docs/architecture/final-capability-map.mmd", "runs/manifests/ep08_final.jsonl", "reports/EP08/REPORT.md"]
+}

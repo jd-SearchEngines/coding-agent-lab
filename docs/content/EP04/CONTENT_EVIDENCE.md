@@ -67,7 +67,7 @@ After: edit → test → failure observation → replan → test → finish.
 
 # Commit SHA
 
-Filled after the episode commit.
+`e4931bf0daa1401bebf91a23534ba44bcc577b8d`
 
 # Next Gap
 
@@ -79,4 +79,3 @@ Define what commands the agent is allowed to execute.
 - `runs/manifests/ep04_runs.jsonl`
 - `tool_failures=5` and final `passed=5`
 - `src/coding_agent/verification.py`
-

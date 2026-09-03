@@ -1,0 +1,15 @@
+{
+  "episode": 2,
+  "version": "v0.2-explore",
+  "commit_sha": "73b464fb60b23b97b3dc5bb455292ba3e1c2d8b6",
+  "core_problem": "Without bounded search and targeted reading, the agent cannot locate relevant repository context.",
+  "core_concept": "Context Engineering",
+  "case_ids": ["case_001", "case_002", "case_003", "case_004", "case_005"],
+  "before": {"exploration_actions": 0, "passes": 0},
+  "after": {"exploration_traces": 5, "passes": 0, "false_finish": 5},
+  "metrics": {"case_count": 5, "steps_avg": 7.0, "cost_usd": null, "model_runs": 0},
+  "bad_cases": ["Exploration happened, but no edit or verification happened."],
+  "current_capabilities": ["understand", "explore"],
+  "remaining_gaps": ["edit", "verify", "sandbox", "recovery", "eval"],
+  "evidence_paths": ["runs/manifests/ep02_runs.jsonl", "reports/EP02/REPORT.md"]
+}

@@ -69,7 +69,7 @@ After: fail → diagnose/update state → replan or stop.
 
 # Commit SHA
 
-Filled after the episode commit.
+`e22bfa56c52858494a7c1c52b858d2b03c2977d5`
 
 # Next Gap
 
@@ -81,4 +81,3 @@ Compare versions over a fixed regression harness rather than individual runs.
 - `src/coding_agent/state.py`
 - `runs/manifests/ep06_summary.json`
 - `tests/test_state.py`
-

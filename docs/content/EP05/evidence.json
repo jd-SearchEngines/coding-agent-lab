@@ -1,0 +1,15 @@
+{
+  "episode": 5,
+  "version": "v0.5-managed",
+  "commit_sha": "c089c029c2713a5ab0b47483dd5f9758ac13aea8",
+  "core_problem": "Model intent must be checked against a system permission boundary before shell execution.",
+  "core_concept": "Execution Boundary",
+  "case_ids": ["case_001", "case_002", "case_003", "case_004", "case_005"],
+  "before": {"permission_denials": 0},
+  "after": {"permission_denials": 5, "passes": 5, "false_finish": 0},
+  "metrics": {"case_count": 5, "steps_avg": 19.0, "tool_failures": 10, "cost_usd": null, "model_runs": 0},
+  "bad_cases": ["cat /etc/passwd was denied five times and never invoked."],
+  "current_capabilities": ["understand", "explore", "edit", "verify", "sandbox"],
+  "remaining_gaps": ["recovery", "eval"],
+  "evidence_paths": ["src/coding_agent/permission.py", "runs/manifests/ep05_runs.jsonl", "reports/EP05/REPORT.md"]
+}

@@ -1,0 +1,15 @@
+{
+  "episode": 1,
+  "version": "v0.1-minimal",
+  "commit_sha": "0545336fdcdc776919991afb332916d2d52175f1",
+  "core_problem": "A minimal loop can self-report completion without changing code or testing it.",
+  "core_concept": "Minimal Agent Loop",
+  "case_ids": ["case_001", "case_002", "case_003", "case_004", "case_005"],
+  "before": {"passes": 0, "self_reported_success": 5},
+  "after": {"passes": 0, "false_finish": 5},
+  "metrics": {"case_count": 5, "steps_avg": 1.0, "cost_usd": null, "model_runs": 0},
+  "bad_cases": ["All five cases: self-report true, external pytest false."],
+  "current_capabilities": ["understand"],
+  "remaining_gaps": ["explore", "edit", "verify", "sandbox", "recovery", "eval"],
+  "evidence_paths": ["runs/manifests/ep01_baseline.jsonl", "reports/EP01/REPORT.md"]
+}

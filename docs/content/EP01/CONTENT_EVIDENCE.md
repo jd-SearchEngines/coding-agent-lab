@@ -71,7 +71,7 @@ separately.
 
 # Commit SHA
 
-Filled after the episode commit and verified with `git show`.
+`0545336fdcdc776919991afb332916d2d52175f1`
 
 # Next Gap
 
@@ -83,4 +83,3 @@ The agent must inspect a repository and make a constrained, observable edit.
 - `runs/manifests/ep01_baseline.jsonl`
 - `runs/manifests/ep01_summary.json`
 - false-finish terminal output in `REPORT.md`
-

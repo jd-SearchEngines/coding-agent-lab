@@ -66,7 +66,7 @@ After: task → search → targeted read → model → final.
 
 # Commit SHA
 
-Filled after the episode commit.
+`73b464fb60b23b97b3dc5bb455292ba3e1c2d8b6`
 
 # Next Gap
 
@@ -79,4 +79,3 @@ record.
 - `runs/manifests/ep02_runs.jsonl`
 - `runs/manifests/ep02_summary.json`
 - `reports/EP02/REPORT.md`
-

@@ -68,7 +68,7 @@ After: targeted edit with a path check and diff evidence.
 
 # Commit SHA
 
-Filled after the episode commit.
+`6cc8e6be10313b180e8caf321fb15e99268319b8`
 
 # Next Gap
 
@@ -80,4 +80,3 @@ Do not trust a successful-looking patch until an external test runs.
 - `tests/test_exploration_and_edit.py`
 - `runs/manifests/ep03_runs.jsonl`
 - before/after changed-file list
-

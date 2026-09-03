@@ -69,7 +69,7 @@ After: fixed cases → fixed verification → version comparison → taxonomy.
 
 # Commit SHA
 
-Filled after the episode commit.
+`ac4a4e3ebf4922793d7cbd5f01fea4b4cfa6e771`
 
 # Next Gap
 
@@ -82,4 +82,3 @@ overclaiming the small synthetic corpus.
 - `reports/season1/failure_taxonomy.md`
 - `runs/manifests/season1_eval.json`
 - `evals/configs/season1.json`
-

@@ -69,7 +69,7 @@ After: Model intent → policy → allowed workspace command or denied observati
 
 # Commit SHA
 
-Filled after the episode commit.
+`c089c029c2713a5ab0b47483dd5f9758ac13aea8`
 
 # Next Gap
 
@@ -82,4 +82,3 @@ loop.
 - `runs/manifests/ep05_runs.jsonl`
 - `permission_denials=5`
 - `src/coding_agent/permission.py`
-

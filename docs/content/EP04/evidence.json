@@ -1,0 +1,15 @@
+{
+  "episode": 4,
+  "version": "v0.4-verify",
+  "commit_sha": "e4931bf0daa1401bebf91a23534ba44bcc577b8d",
+  "core_problem": "The model's completion claim is not evidence that the patch works.",
+  "core_concept": "Verify",
+  "case_ids": ["case_001", "case_002", "case_003", "case_004", "case_005"],
+  "before": {"first_test_failures": 0, "passes": 5},
+  "after": {"first_test_failures": 5, "recovery_success": 5, "passes": 5, "false_finish": 0},
+  "metrics": {"case_count": 5, "steps_avg": 13.0, "tool_failures": 5, "cost_usd": null, "model_runs": 0},
+  "bad_cases": ["Each case begins with a wrong patch and failed pytest, retained as replan evidence."],
+  "current_capabilities": ["understand", "explore", "edit", "verify"],
+  "remaining_gaps": ["sandbox", "recovery", "eval"],
+  "evidence_paths": ["docs/architecture/verification-loop.mmd", "runs/manifests/ep04_runs.jsonl", "reports/EP04/REPORT.md"]
+}

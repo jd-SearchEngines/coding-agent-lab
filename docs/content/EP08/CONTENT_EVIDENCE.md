@@ -72,7 +72,7 @@ and timeout boundaries, with audit and regression evidence.
 
 # Commit SHA
 
-Filled after the final benchmark commit.
+`f71c2a9f1e251cb964965a352b04e869a190e94c`
 
 # Next Gap
 
@@ -85,4 +85,3 @@ provider-backed run with token/cost telemetry.
 - `runs/manifests/ep08_final.jsonl`
 - `runs/manifests/ep08_final_summary.json`
 - `src/coding_agent/production.py`
-
