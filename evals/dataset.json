@@ -1,0 +1,8 @@
+[
+  {"case_id": "case_001", "task": "Normalize a display name as described in README.md.", "verification": "pytest -q"},
+  {"case_id": "case_002", "task": "Validate and parse a network port as described in README.md.", "verification": "pytest -q"},
+  {"case_id": "case_003", "task": "Truncate text according to README.md without violating the limit.", "verification": "pytest -q"},
+  {"case_id": "case_004", "task": "Format seconds according to README.md and handle invalid input.", "verification": "pytest -q"},
+  {"case_id": "case_005", "task": "Implement safe division according to README.md.", "verification": "pytest -q"}
+]
+
