@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+<rect width="1200" height="1500" fill="#f7f8fa"/>
+<style>
+.title{font:700 48px 'Noto Sans CJK SC','Arial',sans-serif;fill:#111827}
+.sub{font:400 20px 'DejaVu Sans Mono','Arial',monospace;fill:#6b7280}
+.h{font:700 34px 'Noto Sans CJK SC','Arial',sans-serif;fill:#111827}
+.t{font:400 28px 'Noto Sans CJK SC','Arial',sans-serif;fill:#374151}
+.m{font:400 26px 'DejaVu Sans Mono','Arial',monospace}
+.b{font:700 28px 'Noto Sans CJK SC','Arial',sans-serif}
+</style>
+<text x="60" y="85" class="title">真实运行证据｜Coding Agent Verify</text>
+<text x="60" y="135" class="sub">Source: runs/manifests/ep04_runs.jsonl · case_001</text>
+<rect x="60" y="210" width="1080" height="470" rx="24" fill="#0f172a"/>
+<text x="95" y="270" class="m" fill="#93c5fd">FIRST PATCH → pytest</text>
+<text x="95" y="345" class="m" fill="#fca5a5">FAILED test_name_utils.py::test_normalize_name_collapses_whitespace</text>
+<text x="95" y="405" class="m" fill="#fca5a5">AssertionError: 'Ada   Lovelace' != 'ada lovelace'</text>
+<text x="95" y="465" class="m" fill="#f87171">1 failed in 0.04s</text>
+<text x="95" y="525" class="m" fill="#f87171">returncode = 1</text>
+<text x="60" y="760" class="h" fill="#2563eb">↓ 失败结果保留为 observation → Replan</text>
+<rect x="60" y="820" width="1080" height="360" rx="24" fill="#0f172a"/>
+<text x="95" y="880" class="m" fill="#86efac">SECOND PATCH → pytest</text>
+<text x="95" y="955" class="m" fill="#86efac">1 passed in 0.00s</text>
+<text x="95" y="1015" class="m" fill="#86efac">external_test_pass: true</text>
+<text x="95" y="1075" class="m" fill="#86efac">false_finish: false</text>
+<rect x="60" y="1240" width="1080" height="170" rx="20" fill="#e8f5e9"/>
+<text x="95" y="1300" class="b" fill="#166534">真实结果：5 个 Case，5 次初始失败，5 次恢复成功</text>
+<text x="95" y="1360" class="b" fill="#166534">最终 5 / 5 PASS</text>
+</svg>
